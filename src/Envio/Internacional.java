@@ -1,3 +1,5 @@
+package Envio;
+
 public class Internacional extends Envio{
     private int minPrecioEnvio = 100;
     public Internacional(Integer precio) {
@@ -5,7 +7,7 @@ public class Internacional extends Envio{
     }
 
     @Override
-    String tiempoDeEnvio() {
+    public String tiempoDeEnvio() {
         return "Tiempo envio 190 horas";
     }
 

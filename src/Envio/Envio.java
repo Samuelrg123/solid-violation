@@ -1,5 +1,7 @@
+package Envio;
+
 public abstract class Envio implements IEnvio {
-  abstract String tiempoDeEnvio();
+  public abstract String tiempoDeEnvio();
   Integer precio;
   Envio(Integer precio) {
     this.precio = precio;
@@ -8,7 +10,7 @@ public abstract class Envio implements IEnvio {
  /* String tipo;
   Integer precio;
 
-  Envio(String tipo, Integer precio) {
+  Envio.Envio(String tipo, Integer precio) {
     this.tipo = tipo;
     this.precio = precio;
   }
@@ -17,8 +19,8 @@ public abstract class Envio implements IEnvio {
     return this.tipo;
   }
 
-  void crearTipoEnvio(Envio envio) {
-    //Save Envio DB
+  void crearTipoEnvio(Envio.Envio envio) {
+    //Save Envio.Envio DB
   }
   */
   /* @Override
@@ -33,7 +35,7 @@ public abstract class Envio implements IEnvio {
 
   @Override
   public boolean permitidoEnAvion() {
-    if (this.tipo.equals("Internacional")) {
+    if (this.tipo.equals("Envio.Internacional")) {
       if (this.precio < 100) {
         return true;
       } else {

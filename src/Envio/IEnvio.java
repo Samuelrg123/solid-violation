@@ -1,3 +1,5 @@
+package Envio;
+
 public interface IEnvio {
 
   void cargarMercancia();
