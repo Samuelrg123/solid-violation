@@ -1,5 +1,5 @@
 package Envio;
-public abstract class Envio implements IEnvio, IpermitidoAV {
+public abstract class Envio implements IEnvio{
   public abstract String tiempoDeEnvio();
   Integer precio;
   String tipo;
