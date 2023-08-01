@@ -1,15 +1,13 @@
 package Envio;
-public abstract class Envio implements IEnvio {
+public abstract class Envio implements IEnvio, IpermitidoAV {
   public abstract String tiempoDeEnvio();
   Integer precio;
+  String tipo;
   Envio(Integer precio) {
     this.precio = precio;
   }
 
- /* String tipo;
-  Integer precio;
-
-  Envio.Envio(String tipo, Integer precio) {
+  Envio(String tipo, Integer precio) {
     this.tipo = tipo;
     this.precio = precio;
   }
@@ -18,11 +16,11 @@ public abstract class Envio implements IEnvio {
     return this.tipo;
   }
 
-  void crearTipoEnvio(Envio.Envio envio) {
+  void crearTipoEnvio(Envio envio) {
     //Save Envio.Envio DB
   }
-  */
-  /* @Override
+
+  @Override
   public void cargarMercancia() {
     //Cargando mercancia
   }
@@ -43,5 +41,5 @@ public abstract class Envio implements IEnvio {
     }
     throw new IllegalArgumentException("no es posible cargar en avion un envio que no sea internacional");
   }
-   */
+
 }
