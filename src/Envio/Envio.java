@@ -1,5 +1,4 @@
 package Envio;
-
 public abstract class Envio implements IEnvio {
   public abstract String tiempoDeEnvio();
   Integer precio;
