@@ -22,8 +22,8 @@ public class Principal {
   }
 
   public static void imprimirTiempoDeEnvio(Envio[] envios){
-    for (Envio coche : envios) {
-      System.out.println(coche.tiempoDeEnvio());
+    for (Envio envio : envios) {
+      System.out.println(envio.tiempoDeEnvio());
 
       /*if(coche.tipo.equals("Envio.Municipal")) System.out.println("Tiempo envio 12 horas");
       if(coche.tipo.equals("Envio.Internacional")) System.out.println("Tiempo envio 190 horas");

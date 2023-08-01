@@ -16,9 +16,6 @@ public abstract class Envio implements IEnvio, IpermitidoAV {
     return this.tipo;
   }
 
-  void crearTipoEnvio(Envio envio) {
-    //Save Envio.Envio DB
-  }
 
   @Override
   public void cargarMercancia() {
@@ -30,7 +27,7 @@ public abstract class Envio implements IEnvio, IpermitidoAV {
     //rastreando paquete
   }
 
-  @Override
+  /*@Override
   public boolean permitidoEnAvion() {
     if (this.tipo.equals("Envio.Internacional")) {
       if (this.precio < 100) {
@@ -40,6 +37,5 @@ public abstract class Envio implements IEnvio, IpermitidoAV {
       }
     }
     throw new IllegalArgumentException("no es posible cargar en avion un envio que no sea internacional");
-  }
-
+  }*/
 }

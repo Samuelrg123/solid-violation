@@ -10,20 +10,20 @@ public class Municipal extends Envio{
         return "Tiempo envio 12 horas";
     }
 
-    @Override
+    /*@Override
     public void cargarMercancia() {
+    }*/
 
-    }
-
-    @Override
+    /*@Override
     public void rastrearPaquete() {
 
-    }
+    }*/
 
-    @Override
+    /*@Override
     public boolean permitidoEnAvion() {
         return false;
-    }
+    }*/
 }
 
+//Eliminar perimitirdo,rastrear,cargar (?)
 
