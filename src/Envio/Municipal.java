@@ -1,23 +1,19 @@
 package Envio;
 
-public class Municipal extends Envio{
-    public Municipal(Integer precio) {
-        super(precio);
+public class Municipal extends Envio {
+
+    public Municipal() {
+        this.precio = 5000;
     }
 
     @Override
-    public String tiempoDeEnvio() {
+    public String obtenerTiempoDeEnvio() {
         return "Tiempo envio 12 horas";
     }
 
-    /*@Override
-    public void cargarMercancia() {
-    }*/
-
-    /*@Override
-    public void rastrearPaquete() {
-
-    }*/
+    public int obtenerPrecio() {
+        return this.precio;
+    }
 
     /*@Override
     public boolean permitidoEnAvion() {

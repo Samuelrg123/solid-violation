@@ -1,34 +1,32 @@
 package Principal;
+
 import Envio.Envio;
 import Envio.Internacional;
 import Envio.Municipal;
 
 public class Principal {
 
-  public static void main(String[] args) {
-    /*
-    Envio.Envio[] envios = {
-        new Envio.Envio("Envio.Municipal",5000),
-        new Envio.Envio("Envio.Internacional",25000)
-    };
-     */
+    public static void main(String[] args) {
 
-    Envio[] envios = {
+    /*Envio[] envios = {
         new Municipal(5000),
         new Internacional(25000)
     };
-    imprimirTiempoDeEnvio(envios);
-    //imprimirTiempoDeEnvio(envios);
-  }
+     */
+        //Correccion
+        Envio[] envios = {
+                new Municipal(),
+                new Internacional()
+        };
 
-  public static void imprimirTiempoDeEnvio(Envio[] envios){
-    for (Envio envio : envios) {
-      System.out.println(envio.tiempoDeEnvio());
-
-      /*if(coche.tipo.equals("Envio.Municipal")) System.out.println("Tiempo envio 12 horas");
-      if(coche.tipo.equals("Envio.Internacional")) System.out.println("Tiempo envio 190 horas");
-       */
+        imprimirTiempoDeEnvio(envios);
     }
-  }
+
+    public static void imprimirTiempoDeEnvio(Envio[] envios) {
+        for (Envio envio : envios) {
+            System.out.println(envio.obtenerTiempoDeEnvio());
+            System.out.println(envio.obtenerPrecio());
+        }
+    }
 }
 

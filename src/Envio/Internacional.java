@@ -1,27 +1,25 @@
 package Envio;
 
-public class Internacional extends Envio implements IpermitidoAV{
-    private int minPrecioEnvio = 100;
-    public Internacional(Integer precio) {
-        super(precio);
+
+public class Internacional extends Envio {
+    public Internacional() {
+        this.precio = 25000;
     }
+
     @Override
-    public String tiempoDeEnvio() {
+    public String obtenerTiempoDeEnvio() {
         return "Tiempo envio 190 horas";
     }
 
-    @Override
-    public boolean permitidoEnAvion() {
-        if (this.tipo.equals("Envio.Internacional")) {
-            if (this.precio < 100) {
-                return true;
-            } else {
-                return false;
-            }
-        }
-        throw new IllegalArgumentException("no es posible cargar en avion un envio que no sea internacional");
+    public int obtenerPrecio() {
+        return this.precio;
     }
 
+    /*@Override
+    public boolean permitidoEnAvion() {
+        return true;
+    }
+     */
     /*@Override
     public void cargarMercancia() {
     }*/
@@ -32,7 +30,7 @@ public class Internacional extends Envio implements IpermitidoAV{
 
     /*@Override
     public boolean permitidoEnAvion() {
-        if (this.precio < minPrecioEnvio){
+        if (this.precio < maxPrecioEnvio){
             return true;
         }else {
             return false;

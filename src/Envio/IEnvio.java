@@ -6,5 +6,7 @@ public interface IEnvio {
 
   void rastrearPaquete();
 
+  void crearTipoEnvio(Envio envio);
+
   /*boolean permitidoEnAvion();*/
 }
