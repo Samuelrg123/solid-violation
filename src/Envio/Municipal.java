@@ -14,12 +14,5 @@ public class Municipal extends Envio {
     public int obtenerPrecio() {
         return this.precio;
     }
-
-    /*@Override
-    public boolean permitidoEnAvion() {
-        return false;
-    }*/
 }
-
-//Eliminar perimitirdo,rastrear,cargar (?)
 

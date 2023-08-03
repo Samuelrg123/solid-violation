@@ -1,6 +1,8 @@
 package Envio;
 
-public class ManejoEnvio implements IEnvio{
+public class ManejoEnvio implements IGestorEnvio {
+    public ManejoEnvio() {
+    }
 
     @Override
     public void cargarMercancia() {

@@ -1,12 +1,10 @@
 package Envio;
 
-public interface IEnvio {
+public interface IGestorEnvio {
 
   void cargarMercancia();
 
   void rastrearPaquete();
 
   void crearTipoEnvio(Envio envio);
-
-  /*boolean permitidoEnAvion();*/
 }
